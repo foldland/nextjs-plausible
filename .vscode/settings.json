@@ -1,0 +1,20 @@
+{
+  "[json][jsonc][javascript][javascriptreact][typescript][typescriptreact][css]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "biome.suggestInstallingGlobally": false,
+  "editor.codeActionsOnSave": {
+    "source.action.useSortedKeys.biome": "explicit",
+    "source.fixAll.biome": "explicit"
+  },
+  "editor.formatOnSave": true,
+  "redhat.telemetry.enabled": false,
+  "js/ts.tsserver.experimental.enableProjectDiagnostics": false,
+  "json.schemaDownload.trustedDomains": {
+    "https://biomejs.dev": true,
+    "https://docs.renovatebot.com/renovate-schema.json": true,
+    "https://gitlab.com/gitlab-org/gitlab/-/raw/master/app/assets/javascripts/editor/schema/ci.json": true,
+    "https://openapi.vercel.sh/vercel.json": true,
+    "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-types/cspell.schema.json": true
+  }
+}

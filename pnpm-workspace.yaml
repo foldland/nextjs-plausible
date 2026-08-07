@@ -1,0 +1,43 @@
+# Dependency age
+minimumReleaseAge: 4320 # 3 days - same as renovate
+minimumReleaseAgeExclude:
+  - "@foldland/*"
+  # security issues
+
+registries:
+  default: https://registry.npmjs.org/
+  "@foldland": https://npm.registry.foldland.io/
+
+# Dependency resolution
+savePrefix: "" # pin dependencies by default
+resolutionMode: "highest"
+strictPeerDependencies: true
+preferFrozenLockfile: true
+
+# node version
+engineStrict: true
+ignorePnpmfile: true
+# pnpm version
+packageManagerStrict: true
+packageManagerStrictVersion: true
+
+# Security
+blockExoticSubdeps: true
+hoist: false
+hoistWorkspacePackages: false
+verifyDepsBeforeRun: "install"
+
+allowBuilds:
+  sharp: false
+
+packages:
+  - "packages/**"
+
+catalog:
+  "@vitejs/plugin-react": "6.0.5"
+  "@vitest/coverage-v8": "4.1.10"
+  "jsdom": "29.1.1"
+  "typescript": "6.0.2"
+  "vite-plugin-dts": "5.0.3"
+  "vite": "8.2.0"
+  "vitest": "4.1.10"

@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=https://gitlab.com/gitlab-org/gitlab/-/raw/master/app/assets/javascripts/editor/schema/ci.json
+
+include:
+  - project: tools/shared-pipelines
+    ref: v7.14.3
+    file: /base/base.yaml
+    inputs:
+      ignored_licenses:
+        - LGPL-3.0-or-later
+        - MIT-0
+        - BlueOak-1.0.0
+  - project: tools/shared-pipelines
+    ref: v7.14.3
+    file: /nodejs/nodejs.yaml
+
+.build_matrix: &build_matrix
+  parallel:
+    matrix:
+      - WORKSPACE_FILTER:
+          - "@foldland/nextjs-plausible"
+
+# Prepare
+prepare-precache:
+  extends: .prepare-nodejs-precache
+
+# Audit
+audit-licenses:
+  extends: .audit-nodejs-licenses
+
+audit-security:
+  extends: .audit-nodejs-security
+
+# Analysis - style
+analysis-lint:
+  extends: .analysis-nodejs-lint
+
+analysis-format:
+  extends: .analysis-nodejs-format
+
+analysis-typescript:
+  <<: *build_matrix
+  extends: .analysis-nodejs-typescript
+
+# Build
+build:
+  <<: *build_matrix
+  extends: .build-nodejs-pnpm
+
+# Publish
+publish-preview:
+  <<: *build_matrix
+  extends: .publish-nodejs-pnpm-preview
+
+publish-production:
+  parallel:
+    matrix:
+      - WORKSPACE_FILTER: "@foldland/nextjs-plausible"
+        MONOREPO_TAG_REGEX: "/^nextjs-plausible-v/"
+  extends: .publish-nodejs-pnpm-production
+
+# Release
+release-prepare-mr:
+  extends: .release-prepare-mr
+
+release-tag:
+  extends: .release-tag

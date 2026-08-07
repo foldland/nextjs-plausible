@@ -1,0 +1,7 @@
+monorepo:
+  enabled: true
+  root:
+    mode: workspace
+  packages:
+    - path: packages/nextjs-plausible
+      name: nextjs-plausible

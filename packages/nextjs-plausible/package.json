@@ -1,0 +1,96 @@
+{
+  "name": "@foldland/nextjs-plausible",
+  "description": "Slim plausible analytics wrapper for nextjs.",
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "foldland Software GmbH",
+    "email": "contact@fold.land",
+    "url": "https://fold.land"
+  },
+  "keywords": [
+    "nextjs",
+    "plausible",
+    "analytics"
+  ],
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/main.d.ts",
+      "import": "./dist/main.js"
+    },
+    "./config/valibot": {
+      "types": "./dist/src/env-valibot.d.ts",
+      "default": "./dist/env-valibot.js"
+    },
+    "./config/zod": {
+      "types": "./dist/src/env-zod.d.ts",
+      "default": "./dist/env-zod.js"
+    }
+  },
+  "scripts": {
+    "build": "vite build",
+    "test": "echo \"No Tests\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@t3-oss/env-nextjs": "0.13.x",
+    "next": "^16.0.0",
+    "react": "^19.0.0",
+    "valibot": "^1.0.0-beta.7 || ^1.0.0",
+    "zod": "^3.24.0 || ^4.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@t3-oss/env-nextjs": {
+      "optional": true
+    },
+    "next": {
+      "optional": true
+    },
+    "react": {
+      "optional": true
+    },
+    "zod": {
+      "optional": true
+    },
+    "valibot": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@plausible-analytics/tracker": "0.4.5",
+    "client-only": "0.0.1",
+    "server-only": "0.0.1"
+  },
+  "devDependencies": {
+    "@t3-oss/env-nextjs": "0.13.11",
+    "@types/node": "24.13.3",
+    "@types/react": "19.2.18",
+    "@vitejs/plugin-react": "catalog:",
+    "@vitest/coverage-v8": "catalog:",
+    "jsdom": "catalog:",
+    "next": "16.3.0",
+    "react": "19.2.8",
+    "typescript": "catalog:",
+    "valibot": "1.4.2",
+    "vite": "catalog:",
+    "vite-plugin-dts": "catalog:",
+    "vitest": "catalog:",
+    "zod": "4.4.3"
+  },
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "version": "24.18.0",
+      "onFail": "download"
+    },
+    "packageManager": {
+      "name": "pnpm",
+      "version": "11.13.1",
+      "onFail": "download"
+    }
+  }
+}

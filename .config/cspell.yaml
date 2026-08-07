@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-types/cspell.schema.json
+
+version: "0.2"
+language: "en"
+useGitignore: true
+enableGlobDot: false
+ignorePaths:
+  - CHANGELOG.md
+  - pnpm-lock.yaml
+dictionaries:
+  # cspell - https://github.com/streetsidesoftware/cspell-dicts
+  - "bash"
+  - "docker"
+  - "en_us"
+  - "git"
+  - "node"
+  - "npm"
+  - "softwareTerms"
+  # project
+  - "project"
+  - "project-tools"
+  # custom
+  - "foldland"
+  - "foldland-tools"
+  - "foldland-nodejs"
+  - "foldland-nodejs-tools"
+dictionaryDefinitions:
+  # project
+  - name: "project"
+    path: cspell/project.txt
+  - name: "project-tools"
+    path: cspell/project-tools.txt
+  # base
+  - name: "foldland"
+    path: https://cspell.foldland.io/v1.25.3/base/misc.txt
+  - name: "foldland-tools"
+    path: https://cspell.foldland.io/v1.25.3/base/tools.txt
+  # nodejs
+  - name: "foldland-nodejs"
+    path: https://cspell.foldland.io/v1.25.3/nodejs/language.txt
+  - name: "foldland-nodejs-tools"
+    path: https://cspell.foldland.io/v1.25.3/nodejs/tools.txt

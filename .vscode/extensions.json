@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "biomejs.biome",
+    "gitlab.gitlab-workflow",
+    "redhat.vscode-yaml",
+    "streetsidesoftware.code-spell-checker",
+    "vitest.explorer",
+    "YoavBls.pretty-ts-errors"
+  ]
+}
