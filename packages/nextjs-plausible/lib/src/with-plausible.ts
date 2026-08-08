@@ -19,7 +19,7 @@ export function withPlausible(
 ): (nextConfig: NextConfig) => NextConfig {
   const plausibleRewrites = [
     {
-      source: env.PLAUSIBLE_PROXY_ENDPOINT,
+      source: env.NEXT_PUBLIC_PLAUSIBLE_PROXY_ENDPOINT,
       destination: new URL('/api/event', env.PLAUSIBLE_URL).href,
     },
   ]
