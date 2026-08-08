@@ -19,14 +19,16 @@ export const plausibleNextjs = (): Readonly<NextEnv> => {
 
     server: {
       PLAUSIBLE_URL: pipe(string(), url()),
-      PLAUSIBLE_PROXY_ENDPOINT: string(),
     },
 
-    client: {},
+    client: {
+      NEXT_PUBLIC_PLAUSIBLE_PROXY_ENDPOINT: string(),
+    },
 
     runtimeEnv: {
       PLAUSIBLE_URL: process.env.PLAUSIBLE_URL,
-      PLAUSIBLE_PROXY_ENDPOINT: process.env.PLAUSIBLE_PROXY_ENDPOINT,
+      NEXT_PUBLIC_PLAUSIBLE_PROXY_ENDPOINT:
+        process.env.NEXT_PUBLIC_PLAUSIBLE_PROXY_ENDPOINT,
     },
   })
 }

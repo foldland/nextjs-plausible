@@ -1,4 +1,4 @@
 export interface NextEnv {
   PLAUSIBLE_URL: string
-  PLAUSIBLE_PROXY_ENDPOINT: string
+  NEXT_PUBLIC_PLAUSIBLE_PROXY_ENDPOINT: string
 }

@@ -25,11 +25,17 @@ export default defineConfig({
       formats: ['es'],
     },
     rolldownOptions: {
+      // work around bungs in upstream `@plausible-analytics/tracker`
+      // when fixed remove the dynamic imports in:
+      // - `init-plausible.ts`
+      // - `track.ts`
       external: [
         'react/jsx-runtime',
         ...Object.keys(pkg.peerDependencies),
         ...Object.keys(pkg.dependencies),
-      ],
+      ].filter((e) => {
+        return e !== '@plausible-analytics/tracker'
+      }),
       output: {
         globals: {
           react: 'React',
