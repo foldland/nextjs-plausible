@@ -1,7 +1,7 @@
 {
   "name": "@foldland/nextjs-plausible",
   "description": "Slim plausible analytics wrapper for nextjs.",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "author": {
     "name": "foldland Software GmbH",
