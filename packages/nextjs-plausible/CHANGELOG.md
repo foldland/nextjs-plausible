@@ -3,7 +3,25 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 ---
-## [1.0.0] - 2026-08-08
+## [nextjs-plausible-v1.0.1](https://gitlab.fold.land/tools/nextjs-plausible/compare/nextjs-plausible-v1.0.0..nextjs-plausible-v1.0.1) - 2026-08-08
+
+### 🐛 Bug Fixes & Optimizations
+
+- **(nextjs-plausible)** bundle exports - ([8bf70aa](https://gitlab.fold.land/tools/nextjs-plausible/commit/8bf70aa78241f9c2534f666ca86ce5960f1712a7)) - @nikolas.rimikis
+- **(nextjs-plausible)** add explicit initPlausible return types - ([140df40](https://gitlab.fold.land/tools/nextjs-plausible/commit/140df4016dfa2a0cd6851bf7978693b45f8e729a)) - @nikolas.rimikis
+- **(nextjs-plausible)** bundle bugged @plausible-analytics/tracker - ([ea7656e](https://gitlab.fold.land/tools/nextjs-plausible/commit/ea7656e8895ea2efcb1535f8b31c61d36c9c2285)) - @nikolas.rimikis
+- **(nextjs-plausible)** mark PROXY_ENDPOINT url as public - ([884edf8](https://gitlab.fold.land/tools/nextjs-plausible/commit/884edf8f7db424b44ced952f6545e99fd6d91bdc)) - @nikolas.rimikis
+
+
+
+
+#### Statistics
+- 4 commit(s) contributed to the release.
+- 0 day(s) passed between the first and last commit.
+- 4 commit(s) parsed as conventional.
+- 0 linked issue(s) detected in commits.
+---
+## [nextjs-plausible-v1.0.0] - 2026-08-08
 
 ### ✨ New Features & Improvements
 
@@ -12,6 +30,8 @@ All notable changes to this project will be documented in this file. See [conven
 #### New Contributors ❤️
 
 
+* @Nikolas Rimikis made their first contribution  in !2
+* @Release Magician 🪄 made their first contribution 
 * @nikolas.rimikis made their first contribution 
 
 #### Statistics
