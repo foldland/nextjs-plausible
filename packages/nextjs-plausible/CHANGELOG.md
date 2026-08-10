@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 ---
+## [nextjs-plausible-v1.0.2](https://gitlab.fold.land/tools/nextjs-plausible/compare/nextjs-plausible-v1.0.1..nextjs-plausible-v1.0.2) - 2026-08-10
+
+### 🐛 Bug Fixes & Optimizations
+
+- **(nextjs-plausible)** do not require domain - ([544754b](https://gitlab.fold.land/tools/nextjs-plausible/commit/544754bb836719f30dea1eea94a4c94ef055c65a)) - @nikolas.rimikis
+
+### 🔧 Chores
+
+- **(deps)** update all non-major dependencies - ([9b1a410](https://gitlab.fold.land/tools/nextjs-plausible/commit/9b1a410135d94eb912bfffc51f8060c04934061e)) - @renovate
+- **(nextjs-plausible)** unify vite and vitest config - ([94749c7](https://gitlab.fold.land/tools/nextjs-plausible/commit/94749c70dfae6a6c22f44c24b43911a672ac60c2)) - @nikolas.rimikis
+
+
+
+
+#### Statistics
+- 3 commit(s) contributed to the release.
+- 0 day(s) passed between the first and last commit.
+- 3 commit(s) parsed as conventional.
+- 0 linked issue(s) detected in commits.
+- 2 day(s) passed between releases.
+---
 ## [nextjs-plausible-v1.0.1](https://gitlab.fold.land/tools/nextjs-plausible/compare/nextjs-plausible-v1.0.0..nextjs-plausible-v1.0.1) - 2026-08-08
 
 ### 🐛 Bug Fixes & Optimizations
