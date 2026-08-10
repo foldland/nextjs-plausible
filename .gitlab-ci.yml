@@ -2,7 +2,7 @@
 
 include:
   - project: tools/shared-pipelines
-    ref: v7.14.3
+    ref: v7.14.5
     file: /base/base.yaml
     inputs:
       ignored_licenses:
@@ -10,7 +10,7 @@ include:
         - MIT-0
         - BlueOak-1.0.0
   - project: tools/shared-pipelines
-    ref: v7.14.3
+    ref: v7.14.5
     file: /nodejs/nodejs.yaml
 
 .build_matrix: &build_matrix

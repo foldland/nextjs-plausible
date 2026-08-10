@@ -1,4 +1,3 @@
-# Dependency age
 minimumReleaseAge: 4320 # 3 days - same as renovate
 minimumReleaseAgeExclude:
   - "@foldland/*"
@@ -37,7 +36,7 @@ catalog:
   "@vitejs/plugin-react": "6.0.5"
   "@vitest/coverage-v8": "4.1.10"
   "jsdom": "29.1.1"
-  "typescript": "6.0.2"
+  "typescript": "6.0.3"
   "vite-plugin-dts": "5.0.3"
-  "vite": "8.2.0"
+  "vite": "8.2.1"
   "vitest": "4.1.10"
