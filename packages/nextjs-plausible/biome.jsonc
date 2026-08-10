@@ -4,22 +4,11 @@
   "extends": ["@foldland/biome-configs/base"],
   "overrides": [
     {
-      "includes": ["**/*.ts"],
+      "includes": ["lib/main.ts"],
       "linter": {
         "rules": {
           "performance": {
-            "noBarrelFile": "off",
-            "noReExportAll": "off"
-          }
-        }
-      }
-    },
-    {
-      "includes": ["vite.config.ts"],
-      "linter": {
-        "rules": {
-          "correctness": {
-            "noNodejsModules": "off"
+            "noBarrelFile": "off"
           }
         }
       }
