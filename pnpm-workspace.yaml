@@ -1,7 +1,7 @@
 minimumReleaseAge: 4320 # 3 days - same as renovate
 minimumReleaseAgeExclude:
   - "@foldland/*"
-  # security issues
+  - "@plausible-analytics/tracker@0.4.6"
 
 registries:
   default: https://registry.npmjs.org/
