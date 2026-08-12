@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 ---
+## [nextjs-plausible-v1.0.3](https://gitlab.fold.land/tools/nextjs-plausible/compare/nextjs-plausible-v1.0.2..nextjs-plausible-v1.0.3) - 2026-08-12
+
+### 🔧 Chores
+
+- **(nextjs-plausible)** update plausible tracker - ([1d7437e](https://gitlab.fold.land/tools/nextjs-plausible/commit/1d7437e845c07757764461efe4db93f2b663a7c4)) - @nikolas.rimikis
+
+
+
+
+#### Statistics
+- 1 commit(s) contributed to the release.
+- 0 day(s) passed between the first and last commit.
+- 1 commit(s) parsed as conventional.
+- 0 linked issue(s) detected in commits.
+- 2 day(s) passed between releases.
+---
 ## [nextjs-plausible-v1.0.2](https://gitlab.fold.land/tools/nextjs-plausible/compare/nextjs-plausible-v1.0.1..nextjs-plausible-v1.0.2) - 2026-08-10
 
 ### 🐛 Bug Fixes & Optimizations
