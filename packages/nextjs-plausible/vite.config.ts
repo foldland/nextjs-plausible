@@ -35,9 +35,7 @@ export default defineConfig({
         'react/jsx-runtime',
         ...Object.keys(pkg.peerDependencies),
         ...Object.keys(pkg.dependencies),
-      ].filter((e) => {
-        return e !== '@plausible-analytics/tracker'
-      }),
+      ],
       output: {
         globals: {
           react: 'React',
