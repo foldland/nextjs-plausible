@@ -72,14 +72,14 @@
     "@vitejs/plugin-react": "catalog:",
     "@vitest/coverage-v8": "catalog:",
     "jsdom": "catalog:",
-    "next": "16.3.3",
+    "next": "16.3.4",
     "react": "19.2.8",
     "typescript": "catalog:",
     "valibot": "1.4.2",
     "vite": "catalog:",
     "vite-plugin-dts": "catalog:",
     "vitest": "catalog:",
-    "zod": "4.4.3"
+    "zod": "4.5.4"
   },
   "devEngines": {
     "runtime": {
@@ -89,7 +89,7 @@
     },
     "packageManager": {
       "name": "pnpm",
-      "version": "11.24.0",
+      "version": "11.25.0",
       "onFail": "download"
     }
   }
