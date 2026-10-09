@@ -12,18 +12,18 @@
     "typecheck": "pnpm -r typecheck"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.5.12",
-    "@foldland/biome-configs": "1.5.0"
+    "@biomejs/biome": "2.5.14",
+    "@foldland/biome-configs": "1.5.1"
   },
   "devEngines": {
     "runtime": {
       "name": "node",
-      "version": "24.20.0",
+      "version": "24.21.0",
       "onFail": "download"
     },
     "packageManager": {
       "name": "pnpm",
-      "version": "11.25.0",
+      "version": "12.9.1",
       "onFail": "download"
     }
   }
