@@ -67,24 +67,24 @@
   },
   "devDependencies": {
     "@t3-oss/env-nextjs": "0.13.11",
-    "@types/node": "24.13.3",
-    "@types/react": "19.2.18",
+    "@types/node": "24.19.1",
+    "@types/react": "19.3.0",
     "@vitejs/plugin-react": "catalog:",
     "@vitest/coverage-v8": "catalog:",
     "jsdom": "catalog:",
     "next": "16.3.4",
-    "react": "19.2.8",
+    "react": "19.3.0",
     "typescript": "catalog:",
-    "valibot": "1.4.2",
+    "valibot": "1.5.0",
     "vite": "catalog:",
     "vite-plugin-dts": "catalog:",
     "vitest": "catalog:",
-    "zod": "4.5.4"
+    "zod": "4.6.5"
   },
   "devEngines": {
     "runtime": {
       "name": "node",
-      "version": "24.20.0",
+      "version": "24.21.0",
       "onFail": "download"
     },
     "packageManager": {
