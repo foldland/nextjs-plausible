@@ -72,7 +72,7 @@
     "@vitejs/plugin-react": "catalog:",
     "@vitest/coverage-v8": "catalog:",
     "jsdom": "catalog:",
-    "next": "16.3.8",
+    "next": "16.4.0",
     "react": "19.3.0",
     "typescript": "catalog:",
     "valibot": "1.5.0",
@@ -89,7 +89,7 @@
     },
     "packageManager": {
       "name": "pnpm",
-      "version": "12.10.0",
+      "version": "12.10.1",
       "onFail": "download"
     }
   }
