@@ -1,22 +1,19 @@
 {
   "name": "@foldland/nextjs-plausible",
-  "description": "Slim plausible analytics wrapper for nextjs.",
   "version": "1.0.3",
+  "description": "Slim plausible analytics wrapper for nextjs.",
+  "keywords": [
+    "nextjs",
+    "plausible",
+    "analytics"
+  ],
   "license": "MIT",
   "author": {
     "name": "foldland Software GmbH",
     "email": "contact@fold.land",
     "url": "https://fold.land"
   },
-  "keywords": [
-    "nextjs",
-    "plausible",
-    "analytics"
-  ],
   "type": "module",
-  "files": [
-    "dist"
-  ],
   "exports": {
     ".": {
       "types": "./dist/main.d.ts",
@@ -31,10 +28,34 @@
       "default": "./dist/env-zod.js"
     }
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "vite build",
     "test": "echo \"No Tests\"",
     "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@plausible-analytics/tracker": "0.4.6",
+    "client-only": "0.0.1",
+    "server-only": "0.0.1"
+  },
+  "devDependencies": {
+    "@t3-oss/env-nextjs": "0.13.11",
+    "@types/node": "24.19.2",
+    "@types/react": "19.3.0",
+    "@vitejs/plugin-react": "catalog:",
+    "@vitest/coverage-v8": "catalog:",
+    "jsdom": "catalog:",
+    "next": "16.4.2",
+    "react": "19.3.1",
+    "typescript": "catalog:",
+    "valibot": "1.5.0",
+    "vite": "catalog:",
+    "vite-plugin-dts": "catalog:",
+    "vitest": "catalog:",
+    "zod": "4.6.7"
   },
   "peerDependencies": {
     "@t3-oss/env-nextjs": "0.13.x",
@@ -53,43 +74,22 @@
     "react": {
       "optional": true
     },
-    "zod": {
-      "optional": true
-    },
     "valibot": {
       "optional": true
+    },
+    "zod": {
+      "optional": true
     }
-  },
-  "dependencies": {
-    "@plausible-analytics/tracker": "0.4.6",
-    "client-only": "0.0.1",
-    "server-only": "0.0.1"
-  },
-  "devDependencies": {
-    "@t3-oss/env-nextjs": "0.13.11",
-    "@types/node": "24.19.1",
-    "@types/react": "19.3.0",
-    "@vitejs/plugin-react": "catalog:",
-    "@vitest/coverage-v8": "catalog:",
-    "jsdom": "catalog:",
-    "next": "16.4.0",
-    "react": "19.3.0",
-    "typescript": "catalog:",
-    "valibot": "1.5.0",
-    "vite": "catalog:",
-    "vite-plugin-dts": "catalog:",
-    "vitest": "catalog:",
-    "zod": "4.6.5"
   },
   "devEngines": {
     "runtime": {
       "name": "node",
-      "version": "24.21.0",
+      "version": "24.22.0",
       "onFail": "download"
     },
     "packageManager": {
       "name": "pnpm",
-      "version": "12.10.1",
+      "version": "12.14.0",
       "onFail": "download"
     }
   }

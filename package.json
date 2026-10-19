@@ -13,17 +13,17 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.15",
-    "@foldland/biome-configs": "1.5.1"
+    "@foldland/biome-configs": "1.6.0"
   },
   "devEngines": {
     "runtime": {
       "name": "node",
-      "version": "24.21.0",
+      "version": "24.22.0",
       "onFail": "download"
     },
     "packageManager": {
       "name": "pnpm",
-      "version": "12.10.1",
+      "version": "12.14.0",
       "onFail": "download"
     }
   }

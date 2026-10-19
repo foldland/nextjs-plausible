@@ -1,7 +1,7 @@
 import 'client-only'
 
 import { init, type PlausibleConfig } from '@plausible-analytics/tracker'
-import type { NextEnv } from './env'
+import type { NextEnv } from './env.ts'
 
 export function initPlausible(
   env: Pick<NextEnv, 'NEXT_PUBLIC_PLAUSIBLE_PROXY_ENDPOINT'>,
