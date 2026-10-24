@@ -188,7 +188,7 @@ catalogs:
       version: 5.0.5
 
 overrides:
-  next@>=16.0.0 <16.3.8: 16.3.8
+  next@>=16.0.0 <16.3.8: 16.4.1
 
 importers:
 

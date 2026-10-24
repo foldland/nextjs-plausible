@@ -1,6 +1,8 @@
 minimumReleaseAge: 4320 # 3 days - same as renovate
 minimumReleaseAgeExclude:
   - "@foldland/*"
+  # Renovate security update: next@16.4.1
+  - next@16.4.1
   # Security issues
 
 registries:
@@ -41,4 +43,4 @@ catalog:
   "vitest": "5.0.5"
 
 overrides:
-  next@>=16.0.0 <16.3.8: 16.3.8
+  next@>=16.0.0 <16.3.8: 16.4.1
