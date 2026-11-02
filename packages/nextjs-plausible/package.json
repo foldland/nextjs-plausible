@@ -37,7 +37,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@plausible-analytics/tracker": "0.4.6",
+    "@plausible-analytics/tracker": "0.4.7",
     "client-only": "0.0.1",
     "server-only": "0.0.1"
   },
@@ -84,12 +84,12 @@
   "devEngines": {
     "runtime": {
       "name": "node",
-      "version": "24.22.1",
+      "version": "24.22.2",
       "onFail": "download"
     },
     "packageManager": {
       "name": "pnpm",
-      "version": "12.15.0",
+      "version": "12.16.1",
       "onFail": "download"
     }
   }
